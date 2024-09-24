@@ -1,0 +1,33 @@
+# Ignora a pasta de dependências do Composer
+/vendor/
+
+# Ignora arquivos de lock de dependências temporários
+composer.lock
+
+# Ignora caches locais do Composer
+composer.phar
+/composer/cache/
+
+# Ignora arquivos de configuração específicos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Ignora logs de erros e debug
+error_log
+*.log
+
+# Ignora caches e arquivos temporários
+/cache/
+tmp/
+*.tmp
+
+# Ignora arquivos do IDE (Exemplo: PHPStorm, VSCode, Sublime, etc.)
+/.idea/
+/.vscode/
+/nbproject/
+/.sublime*
+
+# Ignora arquivos de sistema
+.DS_Store
+Thumbs.db
