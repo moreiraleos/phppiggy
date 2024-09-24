@@ -1,6 +1,8 @@
 # Ignora a pasta de dependências do Composer
 /vendor/
 
+imaginary-file.txt
+
 # Ignora arquivos de lock de dependências temporários
 composer.lock
 

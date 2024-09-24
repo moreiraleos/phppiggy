@@ -1,0 +1,45 @@
+# Normalização de finais de linha para evitar conflitos entre sistemas Windows e Unix
+* text=auto
+
+# Define que todos os arquivos PHP serão tratados como texto
+*.php text
+
+# Ignora diferenças em arquivos de configuração do Composer
+composer.lock -diff
+
+# Arquivos JSON e YAML são tratados como texto
+*.json text
+*.yml text
+*.yaml text
+
+# Certos arquivos binários, como imagens, não devem ser diferenciados
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# Define que arquivos binários não devem ser mesclados automaticamente
+*.bin binary
+*.exe binary
+*.dll binary
+
+# Certos arquivos de configuração ou binários do sistema devem ser ignorados na diferenciação
+*.zip binary
+*.tar binary
+*.gz binary
+*.rar binary
+*.7z binary
+
+# Certifique-se de que os arquivos de controle do Git não sejam alterados
+.gitattributes export-ignore
+.gitignore export-ignore
+
+# Tratamento especial para arquivos Markdown e de documentação como texto
+*.md text
+*.txt text
+*.rst text
+
+# Define os arquivos `.env` como texto, se forem usados em diferentes ambientes
+.env text
