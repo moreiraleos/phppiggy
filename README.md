@@ -1,0 +1,1 @@
+Desenvolvimento de um framework para estudo, com base no padrão MVC, visando a implementação de uma arquitetura em camadas para melhor organização e estruturação do código.
