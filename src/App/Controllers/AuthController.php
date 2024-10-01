@@ -4,11 +4,12 @@ declare(strict_types=1);
 
 namespace App\Controllers;
 
+use App\Services\ValidatorService;
 use Framework\TemplateEngine;
 
 class AuthController
 {
-    public function __construct(private TemplateEngine $view) {}
+    public function __construct(private TemplateEngine $view, private ValidatorService $validatorService) {}
 
 
     public function registerView()
@@ -20,6 +21,7 @@ class AuthController
 
     public function register()
     {
-        dd($_POST);
+        // dd($_POST);
+        $this->validatorService->validateRegister($_POST);
     }
 }
